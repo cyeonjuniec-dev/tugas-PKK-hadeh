@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout & Pembayaran - Luvyn Light</title>
+    <!-- Memuat Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+        }
+        .header-nav a:hover {
+            color: #d81b60; /* Warna pink gelap saat hover */
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+
+    <!-- Header Navigasi -->
+    <header class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav class="flex items-center space-x-6 header-nav text-sm font-medium text-gray-600">
+                <a href="#" class="hover:text-pink-600 transition duration-150 ease-in-out">Our Product</a>
+                <a href="#" class="hover:text-pink-600 transition duration-150 ease-in-out">New Arrivals</a>
+                <a href="#" class="hover:text-pink-600 transition duration-150 ease-in-out">Limited edition</a>
+                <a href="#" class="hover:text-pink-600 transition duration-150 ease-in-out">About Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Konten Utama Halaman Checkout -->
+    <main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-10 md:py-16">
+        
+        <!-- Judul Utama -->
+        <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6 border-b pb-4">
+            Proses Checkout & Pembayaran
+        </h1>
+
+        <!-- Detail Pembayaran (Status Mock-up) -->
+        <div class="bg-white p-6 md:p-8 rounded-xl shadow-lg">
+            <h2 class="text-2xl font-bold text-gray-800 mb-4">Integrasi Pembayaran</h2>
+            
+            <p class="text-lg text-gray-600 mb-6">
+                Di halaman ini, kami akan mengintegrasikan pilihan pembayaran canggih Anda (QRIS, OVO, DANA, GoPay, Bank) melalui Payment Gateway.
+            </p>
+            
+            <!-- Status Implementasi -->
+            <div class="p-4 bg-yellow-50 border-l-4 border-yellow-500 text-yellow-800 rounded-md mb-8" role="alert">
+                <p class="font-semibold text-lg">Status:</p>
+                <p class="font-bold text-xl mt-1">Menunggu Implementasi Pembayaran**</p>
+                <p class="text-sm mt-2">Integrasi sistem pembayaran real-time saat ini masih dalam pengembangan.</p>
+            </div>
+
+            <!-- Bagian untuk menampilkan metode pembayaran setelah terintegrasi (saat ini dikosongkan) -->
+            <div id="payment-options" class="space-y-4">
+                <!-- Placeholder untuk metode pembayaran yang akan datang -->
+                <div class="bg-gray-100 p-4 rounded-lg text-gray-500 italic">
+                    Metode Pembayaran (QRIS, E-Wallet, Transfer Bank) akan ditampilkan di sini.
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tombol Aksi -->
+        <div class="mt-8">
+            <a href="#" id="kembali-ke-keranjang" class="inline-block text-pink-600 font-semibold hover:text-pink-800 transition duration-150 ease-in-out underline">
+                &larr; Kembali ke Keranjang
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer dapat ditambahkan di sini jika diperlukan -->
+
+</body>
+</html>
